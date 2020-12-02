@@ -1,0 +1,14 @@
+name: BiomeCommand
+version: "${pom.version}"
+api: ["1.0.0"]
+author: PetteriM1
+main: me.petterim1.biomecommand.Plugin
+
+commands:
+  setbiome:
+    description: Set biome of a chunk
+    usage: "/setbiome <id> [true=all loaded chunks]"
+    permission: setbiome.use
+permissions:
+  setbiome.use:
+    default: op
